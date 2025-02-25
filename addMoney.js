@@ -6,19 +6,25 @@ document.getElementById('add-money').addEventListener('click',function(event){
     const convertPin = parseInt(pin);
     const mainBalance = document.getElementById('main-balance').innerText;
     const convertedBalance = parseFloat(mainBalance);
-    if(amount && pin){
+    const accountNum = document.getElementById('account-input').value;
+    const selector = document.getElementById('selector').value
+
+    if(accountNum.length === 11 && pin.length ===4){
         if(convertPin === 4589){
-            const sum = convertedBalance + convertedAmount;
-            document.getElementById('main-balance').innerText = sum;
-            const amountValueHide = document.getElementById('amount');
-            amountValueHide.value = '';
-            
+            if(amount && selector ){
+                const sum = convertedBalance + convertedAmount;
+                document.getElementById('main-balance').innerText = sum;
+                const amountValueHide = document.getElementById('amount');
+                amountValueHide.value = '';             
+            }else{
+                alert('Enter Amount  and selector')
+            }
            }
            else{
                alert('invalid pin')
            }
     }
     else{
-        alert('Enter amount and pin number')
+        alert('Enter valid Account and pin')
     }
 })

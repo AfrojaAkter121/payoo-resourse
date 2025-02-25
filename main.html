@@ -23,7 +23,7 @@
 <body class="bg-slate-800">
     <section class="max-w-md min-h-screen mx-auto  bg-gray-100">
         <header class="bg-base-100 rounded-sm">
-            <nav class="flex justify-around items-center mb-5 mt-0">
+            <nav class="mt-5 flex justify-around items-center mb-5 mt-0">
                 
                 <div class="flex gap-3">
                     <img class="w-14 h-14" src="assets/Group (1).png" alt="">
@@ -36,17 +36,19 @@
             </nav>
             <hr>
             <section class="py-4">
-                <h1 class="text-2xl font-bold mb-2 pl-5">Welcome to Payoo</h1>
-                <p class="text-[#08080880] pl-5">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <div class="ml-6">
+                  <h1 class="text-2xl font-bold mb-2 border-l-8 border-x-blue-600 pl-3">Welcome to Payoo</h1>
+                <p class="text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                </div>
                 <!-- cards -->
                 <div class="cards grid grid-cols-3 mt-10 gap-5 p-5 cursor-pointer">
                     <!-- card 1 -->
-                    <div class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-slate-300">
+                    <div id="add-money-box" class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-slate-300">
                         <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
                         <h1 class="text-center text-[#080808B3]">Add Money</h1>
                     </div>
                     <!-- card 2 -->
-                    <div class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-slate-300">
+                    <div id="cash-out-box" class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-slate-300">
                         <img class="mx-auto w-8" src="assets/send1.png " alt="">
                         <h1 class="text-center text-[#080808B3] ">Cashout</h1>
                     </div>
@@ -73,15 +75,15 @@
                 </div>
             </section>
         </header>
-
-              <section class="mt-8"> 
+        <!-- add money section -->
+              <section id="addmoney" class="mt-8 hidden"> 
                 <h1 class="text-left ml-9 text-xl font-bold">Add Money</h1>
                 <div class="hero-content flex-col lg:flex-row-reverse ">
                   <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
                     <form class="card-body">
                       <div class="form-control">
                         <legend class="text-color">Select A Bank</legend>
-                        <select class="select w-full max-w-xs rounded-full  bg-gray-100">
+                        <select id="selector" class="select w-full max-w-xs rounded-full  bg-gray-100">
                             <option disabled selected>select your bank</option>
                             <option class="Bkash">Bkash</option>
                             <option class="Nagad">Nagad</option>
@@ -115,11 +117,45 @@
                   </div>
                 </div>
                 </section>
-              </section>
+
+                <!-- cash out section -->
+                 <section id="cashout" class="mt-10 hidden">
+                  <h1 class="text-left ml-9 text-xl font-bold">Cash Out</h1>
+                  <div class="hero-content flex-col lg:flex-row-reverse ">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 "> 
+                  <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-color">Agent Number</span>
+                    </label>
+                    <input id="account-No" type="number"  placeholder="Enter Your Number" class="input rounded-full  bg-gray-100" value="01829911859" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="cashout-amount" type="number"  placeholder="Add Amount to withdraw" class="input rounded-full bg-gray-100" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="cashout-pin" type="password" placeholder="Enter Your Pin" value="" class="input rounded-full  bg-gray-100" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cash-out-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+                  </div>
+              </form>
+           </div>
+        </div><
+     </section>
+                </section>
              
     </section>
    
 
     <script src="addMoney.js"></script>
+    <script src="toggol.js"></script>
+    <script src="cashout.js"></script>
 </body>
 </html>
