@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        body{
+            font-family: "Outfit", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto  bg-gray-100">
+        <header class="bg-base-100 rounded-sm">
+            <nav class="flex justify-around items-center mb-5 mt-0">
+                
+                <div class="flex gap-3">
+                    <img class="w-14 h-14" src="assets/Group (1).png" alt="">
+                   <div>
+                    <h1 class="text-xl font-bold">$45000</h1>
+                    <p class="border rounded p-2  text-[#080808B3]">Available Balance</p>
+                   </div>
+                </div>
+                <button class="btn  text-[#080808B3]"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</button>
+            </nav>
+            <hr>
+            <section class="py-4">
+                <h1 class="text-2xl font-bold mb-2 pl-5">Welcome to Payoo</h1>
+                <p class="text-[#08080880] pl-5">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <!-- cards -->
+                <div class="cards grid grid-cols-3 mt-10 gap-5 p-5 cursor-pointer">
+                    <!-- card 1 -->
+                    <div class="box border-solid border border-slate-300 p-4 rounded-md">
+                        <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
+                        <h1 class="text-center text-[#080808B3]">Add Money</h1>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="box border-solid border border-slate-300 p-4 rounded-md">
+                        <img class="mx-auto w-8" src="assets/send1.png " alt="">
+                        <h1 class="text-center text-[#080808B3] ">Cashout</h1>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="box border-solid border border-slate-300 p-4 rounded-md">
+                        <img class="mx-auto w-8" src="assets/money1.png" alt="">
+                        <h1 class="text-center  text-[#080808B3]">Transfer Money</h1>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="box border-solid border border-slate-300 p-4 rounded-md">
+                        <img class="mx-auto w-8" src="assets/bonus1.png" alt="">
+                        <h1 class="text-center  text-[#080808B3]"> Get Bonus</h1>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="box border-solid border border-slate-300 p-4 rounded-md">
+                        <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
+                        <h1 class="text-center  text-[#080808B3]">Pay Bill</h1>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="box border-solid border border-slate-300 p-4 rounded-md">
+                        <img class="mx-auto w-8" src="assets/transaction1.png" alt="">
+                        <h1 class="text-center  text-[#080808B3]"> Transactions</h1>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+              <section class="mt-8">
+                <h1 class="text-left ml-9 text-xl font-bold">Add Money</h1>
+                <div class="hero-content flex-col lg:flex-row-reverse ">
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <legend class="text-color">Select A Bank</legend>
+                        <select class="select w-full max-w-xs rounded-full  bg-gray-100">
+                            <option disabled selected>select your bank</option>
+                            <option class="Bkash">Bkash</option>
+                            <option class="Nagad">Nagad</option>
+                            <option class="DBBL">DBBL</option>
+                          </select>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text text-color">Bank Account Number</span>
+                            </label>
+                            <input id="account-input" type="number"  placeholder="Enter Your Number" class="input rounded-full  bg-gray-100" value="01301010101" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Add to Money</span>
+                            </label>
+                            <input id="account-input" type="number"  placeholder="Add Amount to withdraw" class="input rounded-full bg-gray-100" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input id="pin-input" type="password" placeholder="Enter Your Pin" value="4589" class="input rounded-full  bg-gray-100" required />
+                            <label class="label">
+                              <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            </label>
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
+                          </div>
+                    </form>
+                  </div>
+                </div>
+                </section>
+              </section>
+             
+    </section>
+   
+</body>
+</html>
