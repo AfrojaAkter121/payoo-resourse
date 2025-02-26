@@ -68,7 +68,7 @@
                         <h1 class="text-center  text-[#080808B3]">Pay Bill</h1>
                     </div>
                     <!-- card 6 -->
-                    <div class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-slate-300">
+                    <div id="transaction-history-box" class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-slate-300">
                         <img class="mx-auto w-8" src="assets/transaction1.png" alt="">
                         <h1 class="text-center  text-[#080808B3]"> Transactions</h1>
                     </div>
@@ -76,14 +76,14 @@
             </section>
         </header>
         <!-- add money section -->
-              <section id="addmoney" class="mt-8 hidden"> 
+              <section id="addmoney" class="mt-8"> 
                 <h1 class="text-left ml-9 text-xl font-bold">Add Money</h1>
                 <div class="hero-content flex-col lg:flex-row-reverse ">
                   <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
                     <form class="card-body">
                       <div class="form-control">
                         <legend class="text-color">Select A Bank</legend>
-                        <select id="selector" class="select w-full max-w-xs rounded-full  bg-gray-100">
+                        <select id="allBank" class="select w-full max-w-xs rounded-full  bg-gray-100 required:">
                             <option disabled selected>select your bank</option>
                             <option class="Bkash">Bkash</option>
                             <option class="Nagad">Nagad</option>
@@ -116,10 +116,10 @@
                     </form>
                   </div>
                 </div>
-                </section>
+              </section>
 
                 <!-- cash out section -->
-                 <section id="cashout" class="mt-10 hidden">
+                 <section id="cashout" class="mt-10">
                   <h1 class="text-left ml-9 text-xl font-bold">Cash Out</h1>
                   <div class="hero-content flex-col lg:flex-row-reverse ">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 "> 
@@ -147,15 +147,21 @@
                   </div>
               </form>
            </div>
-        </div><
-     </section>
-                </section>
-             
-    </section>
-   
+        </div>
+               </section>
 
+                <!-- transect section -->
+                 <section id="transaction-history" class="mt-10 ml-9">
+                  <h1 class="text-left text-xl font-bold">Transection History</h1>
+                  <div id="transaction-container"></div>
+                 </section>
+    </section>
+  </section>
+   
+    <script src="utilities.js"></script>
     <script src="addMoney.js"></script>
     <script src="toggol.js"></script>
     <script src="cashout.js"></script>
+    <script src="transection.js"></script>
 </body>
 </html>
