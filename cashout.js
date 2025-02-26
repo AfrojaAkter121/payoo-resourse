@@ -5,6 +5,8 @@ document.getElementById('cash-out-box').addEventListener('click',
      handleToggle('transaction-history','none');
      handleToggle('latest-payment','none');
      handleToggle('Pay-Bill','none');
+     handleToggle('transfer-money' , 'none')
+     handleToggle('get-bonus' , 'none')
     }
 )
 
@@ -46,7 +48,8 @@ document.getElementById('cash-out-btn').addEventListener('click',
 
 
                 
-            }else{
+            }
+            else{
                 alert('Enter Amount')
             }
            }

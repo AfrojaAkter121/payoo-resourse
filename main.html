@@ -53,12 +53,12 @@
                         <h1 class="text-center text-[#080808B3] ">Cashout</h1>
                     </div>
                     <!-- card 3 -->
-                    <div class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-sky-100 hover:border-blue-700 ">
+                    <div id="transfer-box" class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-sky-100 hover:border-blue-700 ">
                         <img class="mx-auto w-8" src="assets/money1.png" alt="">
                         <h1 class="text-center  text-[#080808B3]">Transfer Money</h1>
                     </div>
                     <!-- card 4 -->
-                    <div class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-sky-100 hover:border-blue-700 ">
+                    <div id="bonus-box" class="box border-solid border border-slate-300 p-4 rounded-md hover:bg-sky-100 hover:border-blue-700 ">
                         <img class="mx-auto w-8" src="assets/bonus1.png" alt="">
                         <h1 class="text-center  text-[#080808B3]"> Get Bonus</h1>
                     </div>
@@ -147,6 +147,37 @@
         </div>
                </section>
 
+               <section id="transfer-money" class="mt-8"> 
+                <h1 class="text-left ml-9 text-xl font-bold">Transfer Money</h1>
+                <div class="hero-content flex-col lg:flex-row-reverse ">
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
+                    <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text text-color">User Account Number</span>
+                            </label>
+                            <input id="pay-acount" type="number"  placeholder="Enter 11 digit number" class=" input input-bordered input-primary w-full max-w-xs rounded-full" value="01829911859" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="pay-amount" type="number"  placeholder="Enter amount to transfer" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin Number</span>
+                            </label>
+                            <input id="pay-pin" type="password" placeholder="Enter 4 digit pin number" value="" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
+                          </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+               
                 <!-- transect section -->
                  <section id="transaction-history" class="mt-10 ml-9">
                   <h1 class="text-left text-xl font-bold">Transection History</h1>
@@ -194,6 +225,25 @@
                   </div>
                 </section>
   
+                <!-- get bonus -->
+                <section id="get-bonus" class="mt-8"> 
+                  <h1 class="text-left ml-9 text-xl font-bold">Get Bonus</h1>
+                  <div class="hero-content flex-col lg:flex-row-reverse ">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
+                      <form class="card-body">
+                        <div class="form-control">
+                              <label class="label">
+                                <span class="label-text">Enter Bonus Coupon</span>
+                              </label>
+                              <input id="pay-amount" type="text"  placeholder="Enter your coupon" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
+                            </div>
+                            <div id="get-bonus-btn" class="form-control mt-6">
+                              <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Get Bonus</button>
+                            </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
 
                  <section id="latest-payment" class="mt-10 ml-9">
                   <h1 class="text-left text-xl font-bold">Latest Payment</h1>
@@ -258,5 +308,6 @@
     <script src="cashout.js"></script>
     <script src="paybill.js"></script>
     <script src="transection.js"></script>
+    <script src="transfermoney.js"></script>
 </body>
 </html>

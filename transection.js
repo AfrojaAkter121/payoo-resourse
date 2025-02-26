@@ -5,5 +5,7 @@ document.getElementById('transaction-history-box').addEventListener('click',
      handleToggle('transaction-history','block');
      handleToggle('latest-payment','block');
      handleToggle('Pay-Bill','none');
+     handleToggle('transfer-money' , 'none')
+     handleToggle('get-bonus' , 'none')
     }
 )

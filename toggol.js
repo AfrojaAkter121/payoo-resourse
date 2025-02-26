@@ -2,6 +2,8 @@ document.getElementById('addmoney').style.display = 'none'
 document.getElementById('cashout').style.display = 'none'
 document.getElementById('Pay-Bill').style.display = 'none'
 document.getElementById('transaction-history').style.display = 'none'
+document.getElementById('transfer-money').style.display = 'none'
+document.getElementById('get-bonus').style.display = 'none'
 
 
   function handleToggle(id,status){

@@ -5,6 +5,8 @@ document.getElementById('add-money-box').addEventListener('click',
      handleToggle('transaction-history','none');
      handleToggle('latest-payment','none');
      handleToggle('Pay-Bill','none');
+     handleToggle('transfer-money' , 'none')
+     handleToggle('get-bonus' , 'none')
     }
 )
 
