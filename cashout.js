@@ -3,7 +3,8 @@ document.getElementById('cash-out-box').addEventListener('click',
      handleToggle('addmoney','none');
      handleToggle('cashout','block');
      handleToggle('transaction-history','none');
-
+     handleToggle('latest-payment','none');
+     handleToggle('Pay-Bill','none');
     }
 )
 
@@ -34,7 +35,8 @@ document.getElementById('cash-out-btn').addEventListener('click',
                 const container = document.getElementById('transaction-container');
                 const div = document.createElement('div');
                 div.classList.add('bg-red-200')
-                div.classList.add('mt-5')
+                div.classList.add('mt-5');
+                div.classList.add('p-4');
 
                 div.innerHTML = `
                 <h1> Cash Out : ${amount} </h1>

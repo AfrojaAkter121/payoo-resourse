@@ -3,7 +3,8 @@ document.getElementById('add-money-box').addEventListener('click',
      handleToggle('addmoney','block');
      handleToggle('cashout','none');
      handleToggle('transaction-history','none');
-
+     handleToggle('latest-payment','none');
+     handleToggle('Pay-Bill','none');
     }
 )
 
@@ -35,7 +36,8 @@ document.getElementById('add-money').addEventListener('click',function(event){
                 const container = document.getElementById('transaction-container');
                 const div = document.createElement('div');
                 div.classList.add("bg-blue-200")
-                div.classList.add('mt-5')
+                div.classList.add('mt-5');
+                div.classList.add('p-4');
 
                 div.innerHTML =`
                 <h1 class = 'text to-blue-700'> Added Money From : ${selectBank} </h1>

@@ -3,6 +3,7 @@ document.getElementById('transaction-history-box').addEventListener('click',
      handleToggle('addmoney','none');
      handleToggle('cashout','none');
      handleToggle('transaction-history','block');
-
+     handleToggle('latest-payment','block');
+     handleToggle('Pay-Bill','none');
     }
 )

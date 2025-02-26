@@ -1,5 +1,8 @@
+document.getElementById('addmoney').style.display = 'none'
 document.getElementById('cashout').style.display = 'none'
-  document.getElementById('transaction-history').style.display = 'none'
+document.getElementById('Pay-Bill').style.display = 'none'
+document.getElementById('transaction-history').style.display = 'none'
+
 
   function handleToggle(id,status){
     document.getElementById(id).style.display = status;
