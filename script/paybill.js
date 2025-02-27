@@ -31,8 +31,11 @@ document.getElementById('pay-bill-btn').addEventListener('click',
                 if(amount){
                     const sum = mainBalance - amount;
                     document.getElementById('main-balance').innerText = sum;
+
                     const amountValueHide = document.getElementById('pay-amount');
                     amountValueHide.value = '';
+                    const pinHide =  document.getElementById('pay-pin');
+                    pinHide.value = ''
     
                     const container = document.getElementById('transaction-container');
                     const div = document.createElement('div');

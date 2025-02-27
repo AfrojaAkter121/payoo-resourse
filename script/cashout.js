@@ -31,8 +31,12 @@ document.getElementById('cash-out-btn').addEventListener('click',
             if(amount){
                 const sum = convertedBalance - convertedAmount;
                 document.getElementById('main-balance').innerText = sum;
+
+
                 const amountValueHide = document.getElementById('cashout-amount');
                 amountValueHide.value = '';
+                const pinHide =  document.getElementById('cashout-pin');
+                pinHide.value = ''
 
                 const container = document.getElementById('transaction-container');
                 const div = document.createElement('div');

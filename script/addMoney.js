@@ -32,8 +32,11 @@ document.getElementById('add-money').addEventListener('click',function(event){
             if(amount){
                 const sum = convertedBalance + convertedAmount;
                 document.getElementById('main-balance').innerText = sum;
+
                 const amountValueHide = document.getElementById('amount');
                 amountValueHide.value = '';
+                const pinHide =  document.getElementById('pin');
+                    pinHide.value = ''
 
                 const container = document.getElementById('transaction-container');
                 const div = document.createElement('div');

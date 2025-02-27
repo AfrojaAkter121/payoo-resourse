@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-800">
+<body class="bg-black">
     <section class="max-w-md min-h-screen mx-auto  bg-gray-100">
         <header class="bg-base-100 rounded-sm">
             <nav class="mt-5 flex justify-around items-center mb-5 mt-0">
@@ -147,6 +147,7 @@
         </div>
                </section>
 
+               <!-- transfer money -->
                <section id="transfer-money" class="mt-8"> 
                 <h1 class="text-left ml-9 text-xl font-bold">Transfer Money</h1>
                 <div class="hero-content flex-col lg:flex-row-reverse ">
@@ -156,22 +157,22 @@
                             <label class="label">
                               <span class="label-text text-color">User Account Number</span>
                             </label>
-                            <input id="pay-acount" type="number"  placeholder="Enter 11 digit number" class=" input input-bordered input-primary w-full max-w-xs rounded-full" value="01829911859" required />
+                            <input id="transfer-account" type="number"  placeholder="Enter 11 digit number" class=" input input-bordered input-primary w-full max-w-xs rounded-full" value="01829911859" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Amount</span>
                             </label>
-                            <input id="pay-amount" type="number"  placeholder="Enter amount to transfer" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
+                            <input id="tansfer-amount" type="number"  placeholder="Enter amount to transfer" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Pin Number</span>
                             </label>
-                            <input id="pay-pin" type="password" placeholder="Enter 4 digit pin number" value="" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
+                            <input id="transfer-pin" type="password" placeholder="Enter 4 digit pin number" value="" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
                           </div>
                           <div class="form-control mt-6">
-                            <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
+                            <button id="transfermoney-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
                           </div>
                     </form>
                   </div>
@@ -235,10 +236,10 @@
                               <label class="label">
                                 <span class="label-text">Enter Bonus Coupon</span>
                               </label>
-                              <input id="pay-amount" type="text"  placeholder="Enter your coupon" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
+                              <input id="getbonus-amount" type="text"  placeholder="Enter your coupon" class="input input-bordered input-primary w-full max-w-xs rounded-full" required />
                             </div>
-                            <div id="get-bonus-btn" class="form-control mt-6">
-                              <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Get Bonus</button>
+                            <div id="" class="form-control mt-6">
+                              <button id="getbonus-btn" class="btn btn-primary mt-4 rounded-full">Get Bonus</button>
                             </div>
                       </form>
                     </div>
@@ -302,12 +303,13 @@
     </section>
   </section>
    
-    <script src="utilities.js"></script>
-    <script src="addMoney.js"></script>
-    <script src="toggol.js"></script>
-    <script src="cashout.js"></script>
-    <script src="paybill.js"></script>
-    <script src="transection.js"></script>
-    <script src="transfermoney.js"></script>
+    <script src="script/addMoney.js"></script>
+    <script src="script/cashout.js"></script>
+    <script src="script/getbonus.js"></script>
+    <script src="script/paybill.js"></script>
+    <script src="script/toggol.js"></script>
+    <script src="script/transection.js"></script>
+    <script src="script/transfermoney.js"></script>
+    <script src="script/utilities.js"></script>
 </body>
 </html>
